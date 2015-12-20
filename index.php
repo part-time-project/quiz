@@ -15,12 +15,6 @@ function include_partial($fileName, $vars = array())
     require 'partial/' . $fileName;
 }
 
-function lcfirst($str)
-{
-    $str[0] = strtolower($str[0]);
-    return $str;
-}
-
 $page = parse_url($_SERVER['REQUEST_URI']);
 $page = ($page['path'] != '/index.php') ? str_replace('/', '', $page['path']) : '';
 // all available pages
@@ -30,7 +24,7 @@ $page = empty($page) ? 'home-page' : $page;
 // page is in the available pages
 if (in_array($page, $pages)) {
     // remove dash and uppercase after it and lowercase the first one
-    $page = lcfirst(implode(array_map(create_function('$v', 'return ucfirst($v);'), explode('-', $page)))) . '.php';
+    $page = strtolower(implode(array_map(create_function('$v', 'return ucfirst($v);'), explode('-', $page)))) . '.php';
 }
 
 // page exist
