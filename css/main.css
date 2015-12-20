@@ -26,3 +26,31 @@ body {
 	margin: 0 auto;
 	background: url('../images/buttons/homepage.png') center center;
 }
+
+#register {
+	width: 520px;
+	height: 942px;
+	background: url('../images/backgrounds/register.png') center center;
+}
+
+#register-form {
+	position: relative;
+	width: 70%;
+	top: 290px;
+	margin: 0 auto;
+	color: #004c83;
+}
+
+#register-form input, #register-form select {
+   color: #004c83;
+}
+
+#register-button {
+	display: block;
+	position: relative;
+	width: 168px;
+	height: 95px;
+	margin: 0 auto;
+	background: url('../images/buttons/register.png') center center;
+	border: none;
+}

@@ -30,7 +30,17 @@
 					var names = response.name.split(" ");
 					var lastNameParam = (names.length > 1) ? "&lname=" + names[1] : "";
 					var emailParam = (typeof response.email !== "undefined") ? "&email=" + response.email : "";
-					window.location.href = "/register?fname=" + names[0] + lastNameParam + emailParam;
+					var fbIdParam = response.id;
+
+					// ajax check by fb id
+					// jquery ajax call
+
+					// not existing fb id
+					if (true) {
+						window.location.href = "/register?fname=" + names[0] + lastNameParam + emailParam + "&fb_id=" + fbIdParam;
+					} else {
+						window.location.href = "/login?fb_id=" + fbIdParam;
+					}
 				});
 
 			} else {
