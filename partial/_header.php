@@ -17,3 +17,6 @@
     <?php echo $head; ?>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
