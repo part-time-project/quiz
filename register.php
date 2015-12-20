@@ -1,7 +1,7 @@
 <?php
 	$provinces = array(
 		'0' => 'SELEZIONA PROVINCIA',
-		'italia' => 'Italia' 
+		'italia' => 'Italia'
 	);
 	$professions = array(
 		'0' => 'PROFESSIONE',
@@ -15,6 +15,7 @@
 	$profession = '';
 	$phone = '';
 	$legal = '';
+    $agreed = '';
 
 	if (!empty($_POST)) {
 
