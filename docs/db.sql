@@ -1,0 +1,9 @@
+users
+-----
+fb_id,
+fname,
+lname,
+email,
+province,
+phone,
+profession
