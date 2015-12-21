@@ -1,3 +1,3 @@
 <?php
 // all available pages
-$pages = array('home-page', 'register');
+$pages = array('home-page', 'register', 'login');

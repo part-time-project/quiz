@@ -39,6 +39,9 @@ if (in_array($page, $pages)) {
 if (file_exists($page)) {
     // start buffer
     ob_start();
+    // require additional files
+    include_partial('_require.php');
+    session_start();
     // require file
     require $page;
     // get file content
