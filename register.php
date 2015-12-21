@@ -1,5 +1,18 @@
 <?php
-// TODO redirect to questions if logged in user
+
+require 'src/User.php';
+require 'src/Session.php';
+
+// user model
+$user = new \Model\User();
+// session model
+$sessUser = new \Src\Session();
+
+// redirect to questions if logged in user
+if ($sessUser->getIsLoggedIn()) {
+    header('location: /quiz');
+    exit(0);
+}
 
 $provinces = array(
     '0' => 'SELEZIONA PROVINCIA',
@@ -71,11 +84,13 @@ if (!empty($_POST)) {
         }
     }
 
+    // email check
+    if ($user->findBy('email', $email)) {
+        $errors['email'] = 'invalid';
+        $valid = false;
+    }
+
     if ($valid) {
-        require 'src/User.php';
-
-        $user = new \Model\User();
-
         if ($user->save(array(
             'fb_id' => $fbId,
             'email' => $email,
