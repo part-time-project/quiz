@@ -1,7 +1,7 @@
 <?php
 
 $questions = array(
-    'question' => array(
+    'questions' => array(
         1 => 'Se un/a tuo/a amico/a è triste, cosa faresti per cercare di tirarlo/a su di morale?',
         2 => 'Con cosa preferiresti accompagnare la visione di un film?',
         3 => 'Dove passeresti l\'ultimo dell\'anno?',
@@ -15,54 +15,54 @@ $questions = array(
     ),
     'answers' => array(
         1 => array(
-            array('question' => 'Proporrei di andare a fare una passeggiata al mare o in montagna.', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'Cercherei di parlare con lui/lei per capire come affrontare la situazione.', 'profile' => 'SAGGIO'),
-            array('question' => 'Cercherei di accontentare qualsiasi sua richiesta per passare al meglio la giornata insieme.', 'profile' => 'ROMANTICO')
+            array('answer' => 'Proporrei di andare a fare una passeggiata al mare o in montagna.', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'Cercherei di parlare con lui/lei per capire come affrontare la situazione.', 'profile' => 'SAGGIO'),
+            array('answer' => 'Cercherei di accontentare qualsiasi sua richiesta per passare al meglio la giornata insieme.', 'profile' => 'ROMANTICO')
         ),
         2 => array(
-            array('question' => 'Con un dolce.', 'profile' => 'ROMANTICO'),
-            array('question' => 'Con delle patatine.', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'Con un tè o un caffè.', 'profile' => 'SAGGIO')
+            array('answer' => 'Con un dolce.', 'profile' => 'ROMANTICO'),
+            array('answer' => 'Con delle patatine.', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'Con un tè o un caffè.', 'profile' => 'SAGGIO')
         ),
         3 => array(
-            array('question' => 'In un luogo al chiuso. (Es.: ristorante, discoteca, ecc.)', 'profile' => 'SAGGIO'),
-            array('question' => 'In una festa in piazza.', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'Non importa dove, basta che ci sia la mia dolce metà.', 'profile' => 'ROMANTICO')
+            array('answer' => 'In un luogo al chiuso. (Es.: ristorante, discoteca, ecc.)', 'profile' => 'SAGGIO'),
+            array('answer' => 'In una festa in piazza.', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'Non importa dove, basta che ci sia la mia dolce metà.', 'profile' => 'ROMANTICO')
         ),
         4 => array(
-            array('question' => 'In auto o in moto.', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'In treno.', 'profile' => 'ROMANTICO'),
-            array('question' => 'In aereo.', 'profile' => 'SAGGIO')
+            array('answer' => 'In auto o in moto.', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'In treno.', 'profile' => 'ROMANTICO'),
+            array('answer' => 'In aereo.', 'profile' => 'SAGGIO')
         ),
         5 => array(
-            array('question' => 'Cerco di adattarmi.', 'profile' => 'SAGGIO'),
-            array('question' => 'Voglio il mio caffè!', 'profile' => 'ROMANTICO'),
-            array('question' => 'Assaggerei di tutto.', 'profile' => 'AVVENTURIERO')
+            array('answer' => 'Cerco di adattarmi.', 'profile' => 'SAGGIO'),
+            array('answer' => 'Voglio il mio caffè!', 'profile' => 'ROMANTICO'),
+            array('answer' => 'Assaggerei di tutto.', 'profile' => 'AVVENTURIERO')
         ),
         6 => array(
-            array('question' => 'Chiederei a qualcuno se viene con me.', 'profile' => 'ROMANTICO'),
-            array('question' => 'Ci andrei anche da solo/a.', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'Acquisterei due biglietti e ci porterei il mio migliore amico/migliore amica.', 'profile' => 'SAGGIO')
+            array('answer' => 'Chiederei a qualcuno se viene con me.', 'profile' => 'ROMANTICO'),
+            array('answer' => 'Ci andrei anche da solo/a.', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'Acquisterei due biglietti e ci porterei il mio migliore amico/migliore amica.', 'profile' => 'SAGGIO')
         ),
         7 => array(
-            array('question' => 'Alla mia famiglia.', 'profile' => 'SAGGIO'),
-            array('question' => 'Ai mie amici.', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'Alla mia “fidanzatina”.', 'profile' => 'ROMANTICO')
+            array('answer' => 'Alla mia famiglia.', 'profile' => 'SAGGIO'),
+            array('answer' => 'Ai mie amici.', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'Alla mia “fidanzatina”.', 'profile' => 'ROMANTICO')
         ),
         8 => array(
-            array('question' => 'Vasco Rossi', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'Tiziano Ferro', 'profile' => 'ROMANTICO'),
-            array('question' => 'Franco Battiato', 'profile' => 'SAGGIO')
+            array('answer' => 'Vasco Rossi', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'Tiziano Ferro', 'profile' => 'ROMANTICO'),
+            array('answer' => 'Franco Battiato', 'profile' => 'SAGGIO')
         ),
         9 => array(
-            array('question' => 'Madre Teresa di Calcutta', 'profile' => 'ROMANTICO'),
-            array('question' => 'Mahatma Gandhi', 'profile' => 'SAGGIO'),
-            array('question' => 'Cristoforo Colombo', 'profile' => 'AVVENTURIERO')
+            array('answer' => 'Madre Teresa di Calcutta', 'profile' => 'ROMANTICO'),
+            array('answer' => 'Mahatma Gandhi', 'profile' => 'SAGGIO'),
+            array('answer' => 'Cristoforo Colombo', 'profile' => 'AVVENTURIERO')
         ),
         10 => array(
-            array('question' => 'Partirei in un viaggio in giro per il mondo.', 'profile' => 'AVVENTURIERO'),
-            array('question' => 'Comprerei casa.', 'profile' => 'SAGGIO'),
-            array('question' => 'Regalerei una parte della vincita alla mia famiglia.', 'profile' => 'ROMANTICO')
+            array('answer' => 'Partirei in un viaggio in giro per il mondo.', 'profile' => 'AVVENTURIERO'),
+            array('answer' => 'Comprerei casa.', 'profile' => 'SAGGIO'),
+            array('answer' => 'Regalerei una parte della vincita alla mia famiglia.', 'profile' => 'ROMANTICO')
         )
     )
 );
