@@ -97,6 +97,7 @@ class Session
         $_SESSION['province'] = $userData['province'];
         $_SESSION['phone'] = $userData['phone'];
         $_SESSION['profession'] = $userData['profession'];
+        $_SESSION['profile'] = $userData['profile'];
         $_SESSION['createdAt'] = new \DateTime($userData['created_at']);
 
         $this->populateData();

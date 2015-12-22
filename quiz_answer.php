@@ -7,6 +7,7 @@ session_start();
 
 // require files
 require 'configs/configs.ini.php';
+require 'configs/questions.php';
 require PROJECT_PATH . 'src/User.php';
 require PROJECT_PATH . 'src/UserAnswer.php';
 require PROJECT_PATH . 'src/Session.php';
@@ -32,7 +33,7 @@ if ($sessUser->getIsLoggedIn() && $questionId && $answerId) {
 
 	// user already exists
 	if ($userAnswer !== false) {
-		$userAnswer->update(array('answer' => $answerId), $userAnswer->getPrimaryKey());		
+		$userAnswerModel->update(array('answer_id' => $answerId), $userAnswer['id']);		
 	} else {
 		$userAnswer = $userAnswerModel->save(array(
 			'user_id' => $sessUser->getId(),
@@ -46,10 +47,42 @@ if ($sessUser->getIsLoggedIn() && $questionId && $answerId) {
 		$result->status = 'OK';
 		$result->error = '';
 
-		if ($questionId > 9) {
-			// get user profile
+		if ($questionId > 1) {
+			// get all answers
+			$userAnswers = $userAnswerModel->findAllBy('user_id', $sessUser->getId());
+
+			// profile data
+			$profiles = array();
+
+			// iterate user answers
+			foreach ($userAnswers as $userAnswer) {
+				$profile = $questions['answers'][$userAnswer['question_id']['profile']][$userAnswer['answer_id'] - 1]['profile'];
+				if (!isset($profiles[$profile])) {
+					$profiles[$profile] = 0;
+				}
+				$profiles[$profile]++;
+			}
+
+			// max count
+			$maxCount = 0;
+			// user profile
+			$userProfile = '';
+
+			// get profile with max count
+			foreach ($profiles as $profile => $count) {
+				if ($maxCount < $count) {
+					$userProfile = strtolower($profile);
+					$maxCount = $count;
+
+					// update profile in response and session
+					$result->profile = $userProfile;
+					$_SESSION['profile'] = $result->profile;
+				}
+			}
+
+			// update user profile
 			$userModel = new \Model\User();
-			$result->profile = $userModel->find($sessUser->getId());
+			$userModel->update(array('profile' => $result->profile), $sessUser->getId());
 		}
 	}
 }

@@ -13,6 +13,6 @@ class User extends AbstractModel
         parent::__construct();
 
         $this->tableName = 'users';
-        $this->columns = array('fb_id', 'email', 'f_name', 'l_name', 'province', 'phone', 'profession', 'created_at');
+        $this->columns = array('fb_id', 'email', 'f_name', 'l_name', 'province', 'phone', 'profession', 'profile', 'created_at');
     }
 }
