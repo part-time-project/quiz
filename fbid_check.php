@@ -1,6 +1,6 @@
 <?php
 // json header
-//header('Content-Type: application/json; charset=UTF8');
+header('Content-Type: application/json; charset=UTF8');
 
 // start session
 session_start();
