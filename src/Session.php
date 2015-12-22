@@ -20,6 +20,11 @@ class Session
     /**
      * @var int
      */
+    private $id = 0;
+
+    /**
+     * @var int
+     */
     private $fbId = 0;
 
     /**
@@ -84,6 +89,7 @@ class Session
         $userData = $user->findBy('fb_id', $fbId);
         // set session data
         $_SESSION['isLoggedIn'] = true;
+        $_SESSION['id'] = $userData['id'];
         $_SESSION['fbId'] = $userData['fb_id'];
         $_SESSION['email'] = $userData['email'];
         $_SESSION['fName'] = $userData['f_name'];
@@ -114,6 +120,14 @@ class Session
     public function getIsLoggedIn()
     {
         return $this->isLoggedIn;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
     /**

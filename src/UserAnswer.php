@@ -13,13 +13,14 @@ class UserAnswer extends AbstractModel
         parent::__construct();
 
         $this->tableName = 'user_answers';
-        $this->columns = array('user_id', 'question_id', 'answer', 'created_at');
+        $this->columns = array('user_id', 'question_id', 'answer_id', 'created_at');
     }
 
     /**
      * get specific row
      *
-     * @param integer $id
+     * @param integer $userId
+     * @param integer $questionId
      * @param string $fetchMode
      * @return array
      */

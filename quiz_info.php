@@ -7,7 +7,7 @@ require 'configs/configs.ini.php';
 require 'configs/questions.php';
 
 // question id
-$questionId = (!empty($_GET['question_id'])) ? $_GET['question_id'] : 0;
+$questionId = (!empty($_GET['question_id'])) ? (int) $_GET['question_id'] : 0;
 
 // response
 $result = new \stdClass();

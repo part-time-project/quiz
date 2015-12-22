@@ -7,5 +7,6 @@ CREATE TABLE `users` (
   `province` VARCHAR(255) NULL,
   `phone` INT UNSIGNED NULL,
   `profession` VARCHAR(255) NULL,
+  `profile` VARCHAR(50) NULL,
   `created_at` DATETIME NULL,
   PRIMARY KEY (`id`));
