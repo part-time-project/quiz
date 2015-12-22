@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 
-require_once '/vagrant_data/src/AbstractModel.php';
+require_once 'AbstractModel.php';
 
 class User extends AbstractModel
 {

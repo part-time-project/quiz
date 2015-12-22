@@ -6,7 +6,7 @@ header('Content-Type: application/json; charset=UTF8');
 session_start();
 
 // require files
-require 'configs/configs.ini.php';
+require 'configs\configs.ini.php';
 require 'src\User.php';
 
 // user model
