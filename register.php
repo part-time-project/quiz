@@ -1,7 +1,7 @@
 <?php
 
-require 'src/User.php';
-require 'src/Session.php';
+require PROJECT_PATH . 'src/User.php';
+require PROJECT_PATH . 'src/Session.php';
 
 // user model
 $user = new \Model\User();

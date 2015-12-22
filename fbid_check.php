@@ -1,13 +1,13 @@
 <?php
 // json header
-header('Content-Type: application/json; charset=UTF8');
+//header('Content-Type: application/json; charset=UTF8');
 
 // start session
 session_start();
 
 // require files
-require 'configs\configs.ini.php';
-require 'src\User.php';
+require 'configs/configs.ini.php';
+require PROJECT_PATH . 'src/User.php';
 
 // user model
 $user = new \Model\User();
