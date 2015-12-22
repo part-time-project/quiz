@@ -30,9 +30,14 @@ if ($sessUser->getIsLoggedIn() && $questionId && $answer) {
 
 	// user already exists
 	if ($userAnswer !== false) {
-		$userAnswer->update(array('answer' => $answerId), $userAnswer->);
+		$userAnswer->update(array('answer' => $answerId), $userAnswer->getPrimaryKey());
+
 		$result->status = 'OK';
 		$result->error = '';
+	} else {
+		$userAnswer = $userAnswerModel->save(array(
+			
+		)); 
 	}
 }
 
