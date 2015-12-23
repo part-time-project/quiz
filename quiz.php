@@ -1,3 +1,13 @@
+<?php
+require PROJECT_PATH . 'src/Session.php';
+// session model
+$sessUser = new \Src\Session();
+// redirect to questions if logged in user
+if (!$sessUser->getIsLoggedIn()) {
+//    header('location: home-page');
+//    exit(0);
+}
+?>
 <script src="js/spin.js"></script>
 
 <div id="questions" class="center-block text-center">
@@ -34,6 +44,7 @@
                     }
 
                     spinner.stop();
+                    $("#question-button-0, #question-button-1, #question-button-2").removeClass("active");
                 }
             });
         }
@@ -53,12 +64,13 @@
         }
 
         $("#questions button").click(function () {
+            $(this).addClass("active");
             var questionId = $("#question").data("id");
             storeAnswer(questionId, $(this).data("id"));
             questionId++;
             $("#question").data("id", questionId);
 
-            loadQuestion(questionId);
+            setTimeout(loadQuestion, 300, questionId);
         });
 
         loadQuestion($("#question").data("id"));

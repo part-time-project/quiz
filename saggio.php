@@ -11,7 +11,12 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
 }
 ?>
 <div id="saggio" class="center-block text-center">
-    <button id="share-button"></button>
+    <div id="share-text">
+        Sei una persona che riflette prima di agire. Per il prossimo anno, ti suggeriamo di metterti alla prova cercando
+        di fare qualcosa d'istinto, vedrai che sarà un'esperienza da non dimenticare. Non fare follie però, usa sempre
+        la testa :)
+        <button id="share-button"></button>
+    </div>
 </div>
 
 <script>

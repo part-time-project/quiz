@@ -11,7 +11,13 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
 }
 ?>
 <div id="innamorato" class="center-block text-center">
-    <button id="share-button"></button>
+    <div id="romantico-text">
+        Sei una persona che ama condivide le proprie esperienze e non riesci ad
+        immaginare la tua vita da single. Per te tutto ha più colore a stare in due,
+        ma per il 2016 prova anche a ricavarti un pò di tempo solo per te, ti aiuterà ad
+        essere ancora più romantico :)
+        <button id="share-button"></button>
+    </div>
 </div>
 
 <script>

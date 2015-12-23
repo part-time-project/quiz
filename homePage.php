@@ -60,12 +60,10 @@
 
 <div id="homepage" class="center-block text-center">
 	<div id="homepage-text">
-		Lorem Ipsum è un testo segnaposto<br />
-		utilizzato nel settore della tiapografia<br />
-		e della stampa. Lorem Ipsum è<br />
-		considerato il testo segnaposto<br />
-		standard sin dal sedicesimo secolo,<br />
-		quando un anonimo tipografo.
+		Scoprite insieme a noi quale sarà il vostro <br />buon proposito per il 2016.
+		Rispondendo alle nostre<br /> domande, vi diremo che tipo di personalità siete,<br /> se Avventurieri,
+		Saggi o Romantici e quale sarà la<br /> vostra buona promessa da rispettare per l'anno prossimo.<br />
+		Siete curiosi? Iniziamo subito, cliccate su Partecipa!
 	</div>
 	<a href="javascript:void(0)" onclick="fb_login();" id="homepage-button"></a>
 </div>

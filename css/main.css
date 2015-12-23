@@ -73,6 +73,17 @@ body {
 	left: 77px;
 }
 
+#question-button-0.active {
+	display: block;
+	position: relative;
+	width: 51px;
+	height: 68px;
+	background: url('../images/buttons/quiz-1-active.png') center center;
+	border: none;
+	top: 270px;
+	left: 77px;
+}
+
 #question-button-text-0 {
 	position: relative;
 	width: 316px;
@@ -92,6 +103,17 @@ body {
 	left: 77px;
 }
 
+#question-button-1.active {
+	display: block;
+	position: relative;
+	width: 51px;
+	height: 67px;
+	background: url('../images/buttons/quiz-2-active.png') center center;
+	border: none;
+	top: 250px;
+	left: 77px;
+}
+
 #question-button-text-1 {
 	position: relative;
 	width: 316px;
@@ -106,6 +128,17 @@ body {
 	width: 51px;
 	height: 70px;
 	background: url('../images/buttons/quiz-3.png') center center;
+	border: none;
+	top: 231px;
+	left: 77px;
+}
+
+#question-button-2.active {
+	display: block;
+	position: relative;
+	width: 51px;
+	height: 70px;
+	background: url('../images/buttons/quiz-3-active.png') center center;
 	border: none;
 	top: 231px;
 	left: 77px;
@@ -143,13 +176,12 @@ body {
 
 #share-button {
 	display: block;
-	position: relative;
 	width: 168px;
 	height: 48px;
 	background: url('../images/buttons/share.png') center center;
 	border: none;
 	margin: 0 auto;
-	top: 347px;
+	margin-top: 10px;
 }
 
 #avventuriero {
@@ -162,4 +194,15 @@ body {
 	width: 520px;
 	height: 682px;
 	background: url('../images/backgrounds/saggio.png') center center;
+}
+
+#share-text {
+	position: relative;
+	height: 166px;
+	top: 255px;
+	width: 375px;
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 600;
 }

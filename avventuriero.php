@@ -11,7 +11,12 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
 }
 ?>
 <div id="avventuriero" class="center-block text-center">
-    <button id="share-button"></button>
+    <div id="share-text">
+        Sei una persona che vive d'istinto e con l'acceleratore premuto. Ti piace vivere alla giornata e non ami
+        programmare troppo la tua vita. I fuori programma sono sempre ben accetti, ma a volte fermare a riflettere può
+        avere dei vantaggi: provaci nel 2016.
+        <button id="share-button"></button>
+    </div>
 </div>
 
 <script>
