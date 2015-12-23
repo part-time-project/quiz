@@ -24,7 +24,9 @@ if (!function_exists('lcfirst')) {
 }
 
 $page = parse_url($_SERVER['REQUEST_URI']);
+
 $page = ($page['path'] != '/index.php') ? str_replace('/', '', $page['path']) : '';
+$page = str_replace('december', '', $page);
 // all available pages
 require 'routing.php';
 // home-page by default

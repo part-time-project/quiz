@@ -10,7 +10,7 @@ $sessUser = new \Src\Session();
 
 // redirect to questions if logged in user
 if ($sessUser->getIsLoggedIn()) {
-    header('location: /quiz');
+    header('location: quiz');
     exit(0);
 }
 
@@ -211,8 +211,7 @@ if (!empty($_POST)) {
             'province' => $province,
             'phone' => $phone,
             'profession' => $profession
-        ))
-        ) {
+        ))) {
             header("Location: login?fb_id=" . $fbId);
             exit();
         }
@@ -226,38 +225,32 @@ if (!empty($_POST)) {
 ?>
 <div id="register" class="center-block text-center">
     <div id="register-form">
-        <form action="/register" method="POST">
+        <form action="" method="POST">
             <div class="form-group <?php echo (!empty($errors['fName'])) ? 'has-error' : ''; ?>">
-                <input type="text" class="form-control" name="fname" required placeholder="NOME"
-                       value="<?php echo $fName ?>">
+                <input type="text" class="form-control" name="fname" required placeholder="NOME" value="<?php echo $fName ?>">
             </div>
             <div class="form-group <?php echo (!empty($errors['lName'])) ? 'has-error' : ''; ?>">
-                <input type="text" class="form-control" name="lname" required placeholder="COGNAME"
-                       value="<?php echo $lName ?>">
+                <input type="text" class="form-control" name="lname" required placeholder="COGNAME" value="<?php echo $lName ?>">
             </div>
             <div class="form-group <?php echo (!empty($errors['province'])) ? 'has-error' : ''; ?>">
                 <select name="province" class="form-control">
                     <?php foreach ($provinces as $provinceKey => $provinceValue): ?>
-                        <option
-                            value="<?php echo $provinceKey; ?>" <?php echo ($province == $provinceKey) ? 'checked="checked"' : ''; ?>>
+                        <option value="<?php echo $provinceKey; ?>" <?php echo ($province == $provinceKey) ? 'checked="checked"' : ''; ?>>
                             <?php echo $provinceValue; ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
             </div>
             <div class="form-group <?php echo (!empty($errors['phone'])) ? 'has-error' : ''; ?>">
-                <input type="number" class="form-control" required name="phone" placeholder="TELEFONO"
-                       value="<?php echo $phone ?>">
+                <input type="number" class="form-control" required name="phone" placeholder="TELEFONO" value="<?php echo $phone ?>">
             </div>
             <div class="form-group <?php echo (!empty($errors['email'])) ? 'has-error' : ''; ?>">
-                <input type="email" class="form-control" required name="email" placeholder="EMAIL"
-                       value="<?php echo $email ?>">
+                <input type="email" class="form-control" required name="email" placeholder="EMAIL" value="<?php echo $email ?>">
             </div>
             <div class="form-group <?php echo (!empty($errors['profession'])) ? 'has-error' : ''; ?>">
                 <select name="profession" class="form-control">
                     <?php foreach ($professions as $professionKey => $professionValue): ?>
-                        <option
-                            value="<?php echo $professionKey; ?>" <?php echo ($profession == $professionKey) ? 'checked="checked"' : ''; ?>>
+                        <option value="<?php echo $professionKey; ?>" <?php echo ($profession == $professionKey) ? 'checked="checked"' : ''; ?>>
                             <?php echo $professionValue; ?>
                         </option>
                     <?php endforeach; ?>

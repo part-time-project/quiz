@@ -1,4 +1,4 @@
-<script src="/js/spin.js"></script>
+<script src="js/spin.js"></script>
 
 <div id="questions" class="center-block text-center">
     <div id="question" class="text-uppercase" data-id="1"></div>
@@ -23,7 +23,7 @@
         function loadQuestion(questionId) {
             spinner.spin($("#questions").get(0));
             $.ajax({
-                url: "/quiz_info.php?question_id=" + questionId,
+                url: "quiz_info.php?question_id=" + questionId,
                 dataType: "json",
                 success: function (response) {
                     if (response.status === "OK") {
@@ -40,12 +40,12 @@
 
         function storeAnswer(questionId, answerId) {
             $.ajax({
-                url: "/quiz_answer.php?question_id=" + questionId + "&answer_id=" + answerId,
+                url: "quiz_answer.php?question_id=" + questionId + "&answer_id=" + answerId,
                 dataType: "json",
                 success: function (response) {
                     if (response.status === "OK") {
                         if (response.profile !== "") {
-                            window.location.href = "/" + response.profile;
+                            window.location.href = response.profile;
                         }
                     }
                 }

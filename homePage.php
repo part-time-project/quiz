@@ -34,14 +34,14 @@
 
 					// ajax check by fb id
 					$.ajax({
-						url: "/fbid_check.php?fb_id=" + fbIdParam,
+						url: "fbid_check.php?fb_id=" + fbIdParam,
 						dataType: "json",
 						success: function(response) {
 							// not existing fb id
 							if (response.status === "ERROR") {
-								window.location.href = "/register?fname=" + names[0] + lastNameParam + emailParam + "&fb_id=" + fbIdParam;
+								window.location.href = "register?fname=" + names[0] + lastNameParam + emailParam + "&fb_id=" + fbIdParam;
 							} else {
-								window.location.href = "/login?fb_id=" + fbIdParam;
+								window.location.href = "login?fb_id=" + fbIdParam;
 							}
 						}
 					});
