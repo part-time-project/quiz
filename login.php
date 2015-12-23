@@ -6,6 +6,6 @@ $sessUser->logIn((isset($_GET['fb_id'])) ? $_GET['fb_id'] : '');
 
 // redirect to questions
 if ($sessUser->getIsLoggedIn()) {
-	header('location: /quiz');
+	header('location: quiz');
 	exit(0);
 }
