@@ -1,16 +1,5 @@
-php_flag display_startup_errors on
-php_flag display_errors on
-php_flag html_errors on
-php_flag  log_errors on
-php_value error_log  /home/path/public_html/domain/PHP_errors.log
-
-
-
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /december/
-RewriteRule ^index\.php$ - [L]
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /december/index.php [L]
-</IfModule>
+RewriteRule ^(.*) /index.php/$1
