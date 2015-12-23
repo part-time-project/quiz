@@ -28,6 +28,10 @@ if (!$sessUser->getIsLoggedIn()) {
 
 <script>
     $(document).ready(function () {
+        $(new Image()).attr("src", "images/buttons/quiz-1-active.png");
+        $(new Image()).attr("src", "images/buttons/quiz-2-active.png");
+        $(new Image()).attr("src", "images/buttons/quiz-3-active.png");
+
         var spinner = new Spinner();
 
         function loadQuestion(questionId) {

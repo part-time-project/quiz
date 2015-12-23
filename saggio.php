@@ -46,7 +46,7 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
             link: "<?php echo PROJECT_URL; ?>" + "saggio",
             picture: "<?php echo PROJECT_URL; ?>" + 'images/backgrounds/saggio.png',
             name: "Saggio",
-            description: "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tiapografia e della stampa."
+            description: "Sei una persona che riflette prima di agire. Per il prossimo anno, ti suggeriamo di metterti alla prova cercando di fare qualcosa d'istinto, vedrai che sarà un'esperienza da non dimenticare. Non fare follie però, usa sempre la testa :)"
         };
 
         FB.ui(obj, function (res) {

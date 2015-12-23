@@ -11,7 +11,7 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
 }
 ?>
 <div id="innamorato" class="center-block text-center">
-    <div id="romantico-text">
+    <div id="share-text">
         Sei una persona che ama condivide le proprie esperienze e non riesci ad
         immaginare la tua vita da single. Per te tutto ha più colore a stare in due,
         ma per il 2016 prova anche a ricavarti un pò di tempo solo per te, ti aiuterà ad
@@ -47,7 +47,7 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
             link: "<?php echo PROJECT_URL; ?>" + "innamorato",
             picture: "<?php echo PROJECT_URL; ?>" + 'images/backgrounds/innamorato.png',
             name: "Innamorato",
-            description: "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tiapografia e della stampa."
+            description: "Sei una persona che ama condivide le proprie esperienze e non riesci ad immaginare la tua vita da single. Per te tutto ha più colore a stare in due, ma per il 2016 prova anche a ricavarti un pò di tempo solo per te, ti aiuterà ad essere ancora più romantico :)"
         };
 
         FB.ui(obj, function (res) {

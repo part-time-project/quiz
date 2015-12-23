@@ -13,7 +13,7 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
 <div id="avventuriero" class="center-block text-center">
     <div id="share-text">
         Sei una persona che vive d'istinto e con l'acceleratore premuto. Ti piace vivere alla giornata e non ami
-        programmare troppo la tua vita. I fuori programma sono sempre ben accetti, ma a volte fermare a riflettere può
+        programmare troppo la tua vita. I fuori programma sono sempre ben accetti, ma a volte fermarsi a riflettere può
         avere dei vantaggi: provaci nel 2016.
         <button id="share-button"></button>
     </div>
@@ -46,7 +46,7 @@ if (!$sessUser->getIsLoggedIn() || $sessUser->getProfile() == "") {
             link: "<?php echo PROJECT_URL; ?>" + "avventuriero",
             picture: "<?php echo PROJECT_URL; ?>" + 'images/backgrounds/avventuriero.png',
             name: "Avventuriero",
-            description: "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tiapografia e della stampa."
+            description: "Sei una persona che vive d'istinto e con l'acceleratore premuto. Ti piace vivere alla giornata e non ami programmare troppo la tua vita. I fuori programma sono sempre ben accetti, ma a volte fermarsi a riflettere può avere dei vantaggi: provaci nel 2016."
         };
 
         FB.ui(obj, function (res) {
