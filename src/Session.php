@@ -58,6 +58,11 @@ class Session
     private $profession = '';
 
     /**
+     * @var string
+     */
+    private $profile = '';
+
+    /**
      * @var \DateTime
      */
     private $createdAt = null;
@@ -185,6 +190,14 @@ class Session
     public function getProfession()
     {
         return $this->profession;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProfile()
+    {
+        return $this->profile;
     }
 
     /**

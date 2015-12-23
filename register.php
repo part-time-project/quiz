@@ -145,9 +145,12 @@ if (!empty($_POST)) {
                 </select>
             </div>
             <div class="checkbox <?php echo (!empty($errors['legal'])) ? 'has-error' : ''; ?>">
-                <label>
-                    <input type="checkbox" name="legal" value="1"<?php echo $legal; ?>> I agree with Terms and
-                    Conditions
+                <label class="text-left" style="font-size: 70%; margin-bottom: 0;">
+                    <input type="checkbox" name="legal" value="1"<?php echo $legal; ?>>
+                    (*) Dichiaro di essere in possesso dei requisiti per partecipare al concorso e di
+                    accettare il regolamento. Autorizzo al trattamento dei datipersonali per
+                    tutte le finalità come descritto nell`informativa sulla privacy. Per visualizzare
+                    le condizioni clicca qui
                 </label>
             </div>
             <input type="hidden" name="fb_id" value="<?php echo $fbId; ?>">

@@ -51,6 +51,7 @@ body {
 	width: 168px;
 	height: 95px;
 	margin: 0 auto;
+	margin-top: -10px;
 	background: url('../images/buttons/register.png') center center;
 	border: none;
 }
@@ -61,7 +62,7 @@ body {
 	background: url('../images/backgrounds/quiz.png') center center;
 }
 
-#question-button-1 {
+#question-button-0 {
 	display: block;
 	position: relative;
 	width: 51px;
@@ -72,30 +73,60 @@ body {
 	left: 77px;
 }
 
-#question-button-2 {
+#question-button-text-0 {
+	position: relative;
+	width: 316px;
+	top: 233px;
+	left: 137px;
+	text-align: left;
+}
+
+#question-button-1 {
 	display: block;
 	position: relative;
 	width: 51px;
 	height: 68px;
 	background: url('../images/buttons/quiz-2.png') center center;
 	border: none;
-	top: 290px;
+	top: 250px;
 	left: 77px;
 }
 
-#question-button-3 {
+#question-button-text-1 {
+	position: relative;
+	width: 316px;
+	top: 214px;
+	left: 137px;
+	text-align: left;
+}
+
+#question-button-2 {
 	display: block;
 	position: relative;
 	width: 51px;
 	height: 70px;
 	background: url('../images/buttons/quiz-3.png') center center;
 	border: none;
-	top: 307px;
+	top: 230px;
 	left: 77px;
+}
+
+#question-button-text-2 {
+	position: relative;
+	width: 316px;
+	top: 192px;
+	left: 137px;
+	text-align: left;
+}
+
+.question-container {
+	height: 110px;
 }
 
 #question {
 	position: relative;
+	width: 368px;
+	height: 63px;
 	top: 255px;
 	margin: 0 auto;
 	font-size: 16px;
@@ -104,6 +135,31 @@ body {
 	font-weight: 500;
 }
 
-.questions-text {
-	padding-left: 55px;
+#innamorato {
+	width: 520px;
+	height: 682px;
+	background: url('../images/backgrounds/innamorato.png') center center;
+}
+
+#share-button {
+	display: block;
+	position: relative;
+	width: 168px;
+	height: 48px;
+	background: url('../images/buttons/share.png') center center;
+	border: none;
+	margin: 0 auto;
+	top: 347px;
+}
+
+#avventuriero {
+	width: 520px;
+	height: 682px;
+	background: url('../images/backgrounds/avventuriero.png') center center;
+}
+
+#saggio {
+	width: 520px;
+	height: 682px;
+	background: url('../images/backgrounds/saggio.png') center center;
 }

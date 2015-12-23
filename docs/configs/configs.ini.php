@@ -6,3 +6,4 @@ const DB_NAME = 'videoll';
 const DB_USER = 'root';
 const DB_PASS = '';
 const PROJECT_PATH = '__REPLACE__';
+const PROJECT_URL = '__REPLACE__';

@@ -47,7 +47,7 @@ if ($sessUser->getIsLoggedIn() && $questionId && $answerId) {
 		$result->status = 'OK';
 		$result->error = '';
 
-		if ($questionId > 1) {
+		if ($questionId > 9) {
 			// get all answers
 			$userAnswers = $userAnswerModel->findAllBy('user_id', $sessUser->getId());
 
@@ -56,7 +56,7 @@ if ($sessUser->getIsLoggedIn() && $questionId && $answerId) {
 
 			// iterate user answers
 			foreach ($userAnswers as $userAnswer) {
-				$profile = $questions['answers'][$userAnswer['question_id']['profile']][$userAnswer['answer_id'] - 1]['profile'];
+				$profile = $questions['answers'][$userAnswer['question_id']][$userAnswer['answer_id'] - 1]['profile'];
 				if (!isset($profiles[$profile])) {
 					$profiles[$profile] = 0;
 				}
